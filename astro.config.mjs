@@ -13,7 +13,7 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Getting Started',
+					label: 'Primeros Pasos',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Syndeno Platform', slug: 'getting-started/syndeno-platform' },
@@ -41,7 +41,7 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'How To',
+					label: 'Cómo Hacer',
 					//autogenerate: { directory: 'reference' },
 					items: [
 						{
