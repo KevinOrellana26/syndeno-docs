@@ -1,0 +1,14 @@
+starlight({
+  favicon: '/public/favicon.svg',
+  head: [
+    // Add ICO favicon fallback for Safari.
+    {
+      tag: 'link',
+      attrs: {
+        rel: 'icon',
+        href: '/public/syndeno.ico',
+        sizes: '32x32',
+      },
+    },
+  ],
+});
