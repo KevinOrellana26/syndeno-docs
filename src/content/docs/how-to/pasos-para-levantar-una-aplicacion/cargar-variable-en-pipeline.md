@@ -1,11 +1,11 @@
 ---
 title: Cargar variables de entorno en el Pipeline
-description: A reference page in my new Starlight docs site.
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+En caso de haberlas, es conveniente cargar variables de entorno para la aplicación aquí desde su pipeline para luego heredarlas y darles valor según el entorno:
+[captura de variable para Job]: #
 
-## Further reading
+De la misma manera, podemos hacerlo con Archivos que queremos agregar a nuestra aplicación:
+[captura del raw donde se le pasan las variables]: #
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+

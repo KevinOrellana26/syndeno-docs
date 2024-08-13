@@ -1,11 +1,16 @@
 ---
 title: Syndeno Platform
-description: A guide in my new Starlight docs site.
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+[Syndeno Platform -> explicar muy por encima que es Syndeno Platform y además las principales features.]: #
 
-## Further reading
+Syndeno es una plataforma todo en uno donde podrás ver información sobre tu cluster de Kubernetes como así también configurar y desplegar tus aplicaciones y servicios.
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+[![Syndeno Platform](/src/content/docs/img/syndeno-platform.webp "Syndeno Platform")](/src/content/docs/img/syndeno-platform.webp)
+
+## Principales features de Syndeno
+
+* Monitorización de tu cluster.
+* Logs en vivo de tus aplicaciones y servicios.
+* Shell de contenedores.
+* Configuración y despliegue de tus aplicaciones y servicios.

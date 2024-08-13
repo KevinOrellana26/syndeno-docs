@@ -1,11 +1,15 @@
 ---
-title: Logs de un contenedor
-description: A reference page in my new Starlight docs site.
+title: Ver logs de Pods con un contenedor
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+Para esto se debe navegar a Namespaces:
+[Imagen seleccionar namespaces]: #
 
-## Further reading
+Seleccionar el namespace donde se encuentra el Pod del cual queremos ver logs:
+[Imagen mostrar dentro de namespaces ]: #
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+Entrar a la lista de Pods y seleccionar el indicado:
+[imagen Seleccionar pod]: #
+
+Luego dentro del Pod seleccionado, podemos elegir la antigüedad con la que queremos ver logs y darle al botón de play:
+[imagen seleccionar antiguedad de logs y darle play]: #

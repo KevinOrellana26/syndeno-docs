@@ -1,11 +1,23 @@
 ---
 title: ¿Cómo funciona Syndeno?
-description: A guide in my new Starlight docs site.
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+[Cómo funciona Syndeno -> explicar las pilas de tecnologías que utiliza Syndeno y hablar de que siempre se ejecuta en la cuenta cloud del cliente.]: #
 
-## Further reading
+[![Syndeno PaaS](/src/content/docs/img/Syndeno-PaaS.png "Syndeno PaaS")](/src/content/docs/img/Syndeno-PaaS.png)
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+La imagen muestra la pila tecnológica que utiliza Syndeno:
+* 1
+* 2
+* 3
+* 4
+
+## Pila tecnológica en Syndeno
+### 1. 
+---
+### 2. 
+---
+### 3. 
+---
+### 4.
+---

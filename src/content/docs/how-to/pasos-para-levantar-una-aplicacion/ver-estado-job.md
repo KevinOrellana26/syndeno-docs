@@ -1,11 +1,6 @@
 ---
 title: Ver estado del Job
-description: A reference page in my new Starlight docs site.
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
-
-## Further reading
-
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+Una vez dentro de la aplicación podremos ver sus últimas ejecuciones, configurar las variables heredadas, visualizar archivos heredados, modificar JenkinsFile heredada, cambiar la rama o el repo de Git y ejecutar nuestra aplicación:
+[captura de las ejecución del job]: #

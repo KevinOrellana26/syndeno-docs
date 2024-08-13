@@ -1,11 +1,13 @@
 ---
 title: Crear aplicación dentro del entorno
-description: A reference page in my new Starlight docs site.
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+Una vez configurado el dominio ya podemos crear la aplicación en el entorno:
+1. Primero la agregamos a la tabla de aplicaciones con "Crear job":
+[captura creando job]: #
 
-## Further reading
+2. Luego la seleccionamos y le damos a crear: 
+[captura seleccionando crear job]: #
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+3. Ya podemos visualizar la aplicación creada en la tabla e ingresar en ella:
+[captura cuando el job ya este creado]: #

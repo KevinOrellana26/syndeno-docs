@@ -1,11 +1,12 @@
 ---
 title: Configurar pipeline
-description: A reference page in my new Starlight docs site.
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+1. Lo primero es agregar la URL del repositorio de Git donde tenemos la aplicación. Para esto recordar generar un token con permisos y ponerlo en la URL:
+[captura del apartado GIT del Pipeline]: #
 
-## Further reading
+2. El segundo paso es agregar una JenkinsFile. En esta estarán definidos todos los recursos que deberá crear la aplicación, algunas variables y configuraciones:
+[captura del apartado JenkinsFile agregando el Jenkinsfile]: #
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+3. Aquí una JenkinsFile de un backend con node.js básico de ejemplo:
+[código de JenkinsFile de node.js]: #

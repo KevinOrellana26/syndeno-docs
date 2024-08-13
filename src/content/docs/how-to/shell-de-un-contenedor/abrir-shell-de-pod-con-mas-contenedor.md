@@ -1,11 +1,7 @@
 ---
 title: Abrir Shell para Pods con más de un Contenedor
-description: A reference page in my new Starlight docs site.
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+Hay casos en los que un Pod poseé más de un contenedor. En estos casos la navegación es la misma pero tenemos la opción para seleccionar el contenedor en el cual queremos abrir la Shell:
+[captura lista de pod con mas de un contenedor]: #
 
-## Further reading
-
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework

@@ -1,11 +1,8 @@
 ---
 title: Ejecutar comandos durante el despliegue
-description: A reference page in my new Starlight docs site.
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+En caso de querer ejecutar comandos en distintas etapas del despliegue de la aplicación también podemos configurarlos:
+[captura pestaña comandos del pipeline]: #
 
-## Further reading
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework

@@ -1,11 +1,7 @@
 ---
-title: Ver logs con mas de un contenedor
-description: A reference page in my new Starlight docs site.
+title: Ver logs de Pods con más de un contenedor
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+Hay casos en los que un Pod poseé más de un contenedor. En estos casos la navegación es la misma pero tenemos la opción para seleccionar el contenedoren el cual queremos ver Logs:
 
-## Further reading
-
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+[captura con pod con mas de dos contenedores]: #

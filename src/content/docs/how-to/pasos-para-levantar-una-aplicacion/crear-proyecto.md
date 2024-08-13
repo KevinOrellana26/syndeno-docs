@@ -1,11 +1,12 @@
 ---
-title: Crear proyecto
-description: A reference page in my new Starlight docs site.
+title: Crear un proyecto
 ---
 
-Reference pages are ideal for outlining how things work in terse and clear terms.
-Less concerned with telling a story or addressing a specific use case, they should give a comprehensive outline of what you're documenting.
+1. Primero debemos crear un proyecto, el cual contendrá el entorno donde levantaremos nuestra aplicación. Para esto iremos a la sección de proyectos y escogeremos un nombre:
+[captura creando nuevo proyecto]: #
 
-## Further reading
+2. Dentro de nuestro *nuevo-proyecto* crearemos el o los entornos en los cuales estará levantada nuestra aplicación:
+[captura creando nuevo entorno]: #
 
-- Read [about reference](https://diataxis.fr/reference/) in the Diátaxis framework
+3. Ahora que ya tenemos un proyecto y un entorno procederemos a crear un pipeline. Un pipeline es un template con toda la configuración de nuestra aplicación. Podremos crear aplicaciones a partir de él en cualquier entorno perteneciente al proyecto:
+[captura creando un pipeline]: #
