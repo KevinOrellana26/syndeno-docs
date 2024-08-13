@@ -14,6 +14,7 @@ export default defineConfig({
 			},
 			logo: {
 				src: './src/assets/logo-text.svg', //PEDIRLE A AIRAM QUE ME PASE UN LOGO DE SYNDENO
+				replacesTitle: true,
 			},
 			sidebar: [
 				{
