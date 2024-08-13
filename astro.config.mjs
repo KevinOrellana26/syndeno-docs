@@ -3,6 +3,10 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+	i18n: {  //idiomas
+		defaultLocale: "es",
+		locales: ["es"],
+	},
 	integrations: [
 		starlight({
 			favicon: '/favicon.ico', // LOGO PARA QUE SE VEA EN LA PESTAÑA /public/favicon.ico
@@ -130,42 +134,8 @@ export default defineConfig({
 							],
 						},
 						{
-							label: "Pasos para levantar una aplicación",
-							collapsed: true,
-							items: [
-								{
-									label: "Pasos para levantar una Aplicación",
-									slug: "how-to/pasos-para-levantar-una-aplicacion/pasos-para-levantar-app",
-								},
-								{
-									label: "Crear un proyecto",
-									slug: "how-to/pasos-para-levantar-una-aplicacion/crear-proyecto",
-								},
-								{
-									label: "Configurar pipeline",
-									slug: "how-to/pasos-para-levantar-una-aplicacion/configurar-pipeline",
-								},
-								{
-									label: "Cargar variables de entorno en el Pipeline",
-									slug: "how-to/pasos-para-levantar-una-aplicacion/cargar-variable-en-pipeline",
-								},
-								{
-									label: "Ejecutar comandos durante el despliegue",
-									slug: "how-to/pasos-para-levantar-una-aplicacion/ejecutar-comandos-durante-despliegue",
-								},
-								{
-									label: "Configuración del dominio",
-									slug: "how-to/pasos-para-levantar-una-aplicacion/configuracion-dominio",
-								},
-								{
-									label: "Crear aplicación dentro del entorno",
-									slug: "how-to/pasos-para-levantar-una-aplicacion/crear-aplicacion-dentro-del-entorno",
-								},
-								{
-									label: "Ver estado del Job",
-									slug: "how-to/pasos-para-levantar-una-aplicacion/ver-estado-job",
-								},
-							],
+							label: "Pasos para levantar una Aplicación",
+							slug: "how-to/pasos-para-levantar-app",
 						},
 					],
 				},
