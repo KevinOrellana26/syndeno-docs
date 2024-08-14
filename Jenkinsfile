@@ -2,7 +2,6 @@
 
 pipelineKubernetesJobGoogle {
     name = "syndeno-wiki"
-    stateBucketName = "syndeno-gke-${this.params.GENERAL_cluster_name}-${this.params.GENERAL_namespace}-syndeno-wiki"
 
     pipelineParameters = []
 
@@ -16,9 +15,9 @@ pipelineKubernetesJobGoogle {
             prepareCommands = """
             """.stripIndent()
 
-            def namespace = this.params.GENERAL_namespace
+            def namespace = this.params.SYN_ENVIRONMENT_name
             def imageName = this.params.GCP_container_registry + '/' + this.params.GCP_container_registry_folder + '/' + 'syndeno-wiki-' + namespace
-            def fqdn = "docs." + this.params.GENERAL_domain
+            def fqdn = "docs.syndeno.cloud"
 
             images = [
                 [
@@ -48,13 +47,13 @@ pipelineKubernetesJobGoogle {
                             resources: [
                                 requests: [
                                     enabled: true,
-                                    cpu: "100m",
-                                    memory: "300M"
+                                    cpu: "10m",
+                                    memory: "30M"
                                 ],
                                 limits: [
                                     enabled: false,
-                                    cpu: "800m",
-                                    memory: "1G"
+                                    cpu: "100m",
+                                    memory: "256M"
                                 ]
                             ]
                         ]
