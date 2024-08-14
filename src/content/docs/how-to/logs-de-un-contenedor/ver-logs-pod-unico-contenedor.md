@@ -1,5 +1,5 @@
 ---
-title: Ver logs de Pods con un contenedor
+title: Pods con un contenedor
 ---
 
 Para esto se debe navegar a Namespaces:

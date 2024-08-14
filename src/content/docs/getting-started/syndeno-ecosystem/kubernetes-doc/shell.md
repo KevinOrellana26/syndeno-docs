@@ -18,8 +18,8 @@ como por ejemplo: **ps**, **netstat**, **top**, **strace**, etc.
 * Monitorear recursos: Puedes usar herramientas como **top**, **htop**, **iotop**, etc., para monitorear el uso de CPU, memoria y E/S dentro del contenedor.
 
 <div style="text-align: center;">
-  <a href="/src/content/docs/img/shell.png">
-    <img src="/src/content/docs/img/shell.png" alt="Shell" title="Shell" style="max-width: 100%; height: auto;">
+  <a href="/src/content/docs/img/kubernetes-img/shell.png">
+    <img src="/src/content/docs/img/kubernetes-img/shell.png" alt="Shell" title="Shell" style="max-width: 100%; height: auto;">
   </a>
   <p><em>Shell</em></p>
 </div>

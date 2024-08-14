@@ -2,7 +2,7 @@
 title: ¿Cómo funciona Syndeno?
 ---
 
-[Cómo funciona Syndeno -> explicar las pilas de tecnologías que utiliza Syndeno y hablar de que siempre se ejecuta en la cuenta cloud del cliente.]: #
+Syndeno dispone de una infraestructura sólida y adaptable, estructurada a través del siguiente stack:
 
 <div style="text-align: center;">
   <a href="/src/content/docs/img/syndeno-PaaS.png">
@@ -11,19 +11,30 @@ title: ¿Cómo funciona Syndeno?
   <p><em>Syndeno PaaS</em></p>
 </div>
 
+La imagen muestra el stack que utiliza Syndeno:
+1. Aprovecha tu propia cuenta de Cloud.
+2. Desacopla de tu proveedor de infraestructura.
+3. Base de datos gestionadas y optimizadas, métricas en tiempo real.
+4. Automatiza tus despliegues, tus aplicaciones divididas en microservicios.
 
-La imagen muestra la pila tecnológica que utiliza Syndeno:
-* 1
-* 2
-* 3
-* 4
+---
 
-## Pila tecnológica en Syndeno
-### 1. 
+## Stack en Syndeno
+### 1. Aprovecha tu propia cuenta de Cloud
+
+Syndeno implementa una estrategia de nube privada para optimizar la gestión de recursos y mejorar la escalabilidad y flexibilidad. Utiliza plataformas líderes en la industria como AWS, Azure o GCP para configurar y administrar tu infraestructura de manera eficiente.
+
 ---
-### 2. 
+### 2. Desacopla de tu proveedor de infraestructura
+
+Implementa Kubernetes para la orquestación de contenedores, lo que proporciona una capa de abstracción que te permite desacoplar tu infraestuctura de los proveedores de servicios en la nube. Esto facilita la portabilidad y la escalabilidad de tus aplicaciones.
+
 ---
-### 3. 
+### 3. Base de datos gestionadas y optimizadas, métricas en tiempo real
+
+Adopta bases de datos gestionadas para asegurar un rendimiento óptimo y reducir la carga operativa relacionada con el mantenimiento y escalado. Completo esto con herramientas de monitoreo y visualización, como Prometheus y Grafana, para obtener métricas en tiempo real.
+
 ---
-### 4.
----
+### 4. Automatiza tus despliegues, tus aplicaciones divididas en microservicios
+
+Implemta pipelines de CI/CD para automatizar los despliegues y garantizar una entrega continua de valor. Además, adopta una arquitectura de microservicios para mejorar la modularidad y escalabiliad de tus aplicaciones, facilitando el mantenimiento y la evolución continua del sistema.

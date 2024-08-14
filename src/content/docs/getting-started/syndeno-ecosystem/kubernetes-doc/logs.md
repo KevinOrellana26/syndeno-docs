@@ -11,15 +11,15 @@ En ella podremos:
 * Abrir la terminal en modo ventana lo cual nos permitirá tener más de una ventana con logs de diferentes aplicaciones a la vez. 
 
 <div style="text-align: center;">
-  <a href="/src/content/docs/img/logs-plataforma.png">
-    <img src="/src/content/docs/img/logs-plataforma.png" alt="logs-plataforma" title="logs-plataforma" style="max-width: 100%; height: auto;">
+  <a href="/src/content/docs/img/kubernetes-img/logs-plataforma.png">
+    <img src="/src/content/docs/img/kubernetes-img/logs-plataforma.png" alt="logs-plataforma" title="logs-plataforma" style="max-width: 100%; height: auto;">
   </a>
   <p><em>Logs dentro de la plataforma</em></p>
 </div>
 
 <div style="text-align: center;">
-  <a href="/src/content/docs/img/logs-ventana.png">
-    <img src="/src/content/docs/img/logs-ventana.png" alt="logs-ventana" title="logs-ventana" style="max-width: 100%; height: auto;">
+  <a href="/src/content/docs/img/kubernetes-img/logs-ventana.png">
+    <img src="/src/content/docs/img/kubernetes-img/logs-ventana.png" alt="logs-ventana" title="logs-ventana" style="max-width: 100%; height: auto;">
   </a>
   <p><em>Logs en ventana independiente</em></p>
 </div>

@@ -1,23 +1,94 @@
+@org.jenkinsci.plugins.workflow.libs.Library('syndeno-lib@v5-stable') _
 
-SYN_JOB_param_admin_password="%9awwxeXOH$Vz^c%N*eRje0Yn9h#-%@k"
-SYN_JOB_param_admin_user="user"
-SYN_JOB_param_cert_issuer="syndeno-issuer-http"
-SYN_JOB_param_chart_version="21.0.0"
-SYN_JOB_param_db_password="X=yRgG*B#2HjvyxA#XMPXsEm2Y^vLyEy"
-SYN_JOB_param_db_persistence_size="20Gi"
-SYN_JOB_param_db_resources_limits_cpu="2"
-SYN_JOB_param_db_resources_limits_memory="4G"
-SYN_JOB_param_db_resources_request_cpu="100m"
-SYN_JOB_param_db_resources_request_memory="512M"
-SYN_JOB_param_hostname="auth"
-SYN_JOB_param_image_registry="syndenosyndenoops.azurecr.io"
-SYN_JOB_param_image_repository="keycloak"
-SYN_JOB_param_image_tag="latest"
-SYN_JOB_param_node_selector="general"
-SYN_JOB_param_release_name="syndeno-keycloak"
-SYN_JOB_param_resource_prefix="syndeno"
-SYN_JOB_param_resources_limits_cpu="1500m"
-SYN_JOB_param_resources_limits_memory="3G"
-SYN_JOB_param_resources_request_cpu="100m"
-SYN_JOB_param_resources_request_memory="1G"
-SYN_JOB_param_service_name="syndeno-keycloak"
+pipelineKubernetesJobGoogle {
+    name = "syndeno-wiki"
+    stateBucketName = "syndeno-gke-${this.params.GENERAL_cluster_name}-${this.params.GENERAL_namespace}-syndeno-wiki"
+
+    pipelineParameters = []
+
+    buildEnvironment = {}
+
+    build = [
+        newKubernetesBuild {
+            name = "syndeno-wiki"
+            srcPath = "."
+
+            prepareCommands = """
+            """.stripIndent()
+
+            def namespace = this.params.GENERAL_namespace
+            def imageName = this.params.GCP_container_registry + '/' + this.params.GCP_container_registry_folder + '/' + 'syndeno-wiki-' + namespace
+            def fqdn = "docs." + this.params.GENERAL_domain
+
+            images = [
+                [
+                    name: 'syndeno-wiki',
+                    image: imageName,
+                    basePath: '.',
+                    tags: 'latest',
+                    dockerfile: [
+                        type: "FILE",
+                        filePath: "Dockerfile"
+                    ]
+                ]
+            ]
+
+            deployments = [
+                [
+                    name: "syndeno-wiki",
+                    namespace: namespace,
+                    replicas: 1,
+                    containers: [
+                        [
+                            name: 'syndeno-wiki',
+                            imageName: imageName,
+                            imageTag: "latest",
+                            probePort: 80,
+                            env: [:],
+                            resources: [
+                                requests: [
+                                    enabled: true,
+                                    cpu: "100m",
+                                    memory: "300M"
+                                ],
+                                limits: [
+                                    enabled: false,
+                                    cpu: "800m",
+                                    memory: "1G"
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+
+            ingresses = [
+                [
+                    name: "wiki-ingress",
+                    namespace: namespace,
+                    cert_issuer: 'syndeno-issuer',
+                    ingressClass: 'nginx',
+                    tls: fqdn,
+                    rules: [
+                        [
+                            host: fqdn,
+                            path: "/",
+                            serviceName: "syndeno-wiki-np",
+                            servicePort: 80
+                        ]
+                    ]
+                ]
+            ]
+
+            nodePorts = [
+                [
+                    name: "syndeno-wiki-np",
+                    namespace: namespace,
+                    port: 80,
+                    targetPort: 80,
+                    selector: 'syndeno-wiki'
+                ]
+            ]
+        }
+    ]
+}

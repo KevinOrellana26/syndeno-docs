@@ -6,8 +6,8 @@ Un proyecto en Syndeno es una entidad en la cual se alojarán tus distintos ento
 
 
 <div style="text-align: center;">
-  <a href="/src/content/docs/img/proyecto.png">
-    <img src="/src/content/docs/img/proyecto.png" alt="variables para entorno" title="variables para entorno" style="max-width: 100%; height: auto;">
+  <a href="/src/content/docs/img/devops/proyecto.png">
+    <img src="/src/content/docs/img/devops/proyecto.png" alt="variables para entorno" title="variables para entorno" style="max-width: 100%; height: auto;">
   </a>
   <p><em>variables para entorno</em></p>
 </div>

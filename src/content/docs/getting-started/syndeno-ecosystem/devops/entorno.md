@@ -11,8 +11,8 @@ En un entorno podrás desplegar tus aplicaciones y servicios creados a partir de
 
 En la tabla podemos observar la fecha de la última ejecución y resultado de cada aplicación perteneciente al Entorno.
 <div style="text-align: center;">
-  <a href="/src/content/docs/img/entorno.png">
-    <img src="/src/content/docs/img/entorno.png" alt="entorno" title="entorno" style="max-width: 100%; height: auto;">
+  <a href="/src/content/docs/img/devops/entorno.png">
+    <img src="/src/content/docs/img/devops/entorno.png" alt="entorno" title="entorno" style="max-width: 100%; height: auto;">
   </a>
   <p><em>vista general del entorno</em></p>
 </div>
@@ -34,15 +34,15 @@ Dentro de una aplicación/servicio podrás realizar distintas configuraciones co
 * **Método de construcción de imágenes**: se puede elegir si el despliegue se hace de forma nativa o con kaniko.
 
 <div style="text-align: center;">
-  <a href="/src/content/docs/img/historial-pipeline.png">
-    <img src="/src/content/docs/img/historial-pipeline.png" alt="historial de pipelines ejecutados" title="historial de pipelines ejecutados" style="max-width: 100%; height: auto;">
+  <a href="/src/content/docs/img/devops/historial-pipeline.png">
+    <img src="/src/content/docs/img/devops/historial-pipeline.png" alt="historial de pipelines ejecutados" title="historial de pipelines ejecutados" style="max-width: 100%; height: auto;">
   </a>
   <p><em>Historial de Pipelines ejecutados, podemos consultar las últimas 10 construcciones</em></p>
 </div>
 
 <div style="text-align: center;">
-  <a href="/src/content/docs/img/logs-pipeline-terminado.png">
-    <img src="/src/content/docs/img/logs-pipeline-terminado.png" alt="logs de pipeline terminado" title="logs de pipeline terminado" style="max-width: 100%; height: auto;">
+  <a href="/src/content/docs/img/devops/logs-pipeline-terminado.png">
+    <img src="/src/content/docs/img/devops/logs-pipeline-terminado.png" alt="logs de pipeline terminado" title="logs de pipeline terminado" style="max-width: 100%; height: auto;">
   </a>
   <p><em>Logs de un Pipeline que ha terminado su ejecución</em></p>
 </div>

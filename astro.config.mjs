@@ -97,24 +97,18 @@ export default defineConfig({
 					items: [
 						{
 							label: "Login and Sign Up",
-							collapsed: true,
-							items: [
-								{
-									label: "Login and Sign Up",
-									slug: "how-to/login-and-signup/login-and-signup",
-								},
-							],
+							slug: "how-to/login-and-signup/login-and-signup",
 						},
 						{
-							label: "Logs de un contenedor",
+							label: "Visualizar Logs",
 							collapsed: true,
 							items: [
 								{
-									label: "Ver logs de un pod con un único contenedor",
+									label: "Pod con un único contenedor",
 									slug: "how-to/logs-de-un-contenedor/ver-logs-pod-unico-contenedor",
 								},
 								{
-									label: "Ver logs de un pod con más de un contenedor",
+									label: "Pod con más de un contenedor",
 									slug: "how-to/logs-de-un-contenedor/ver-logs-pod-con-mas-contenedor",
 								},
 							],
@@ -124,11 +118,11 @@ export default defineConfig({
 							collapsed: true,
 							items: [
 								{
-									label: "Pods con un único contenedor",
+									label: "Pod con un único contenedor",
 									slug: "how-to/shell-de-un-contenedor/pod-con-un-contenedor",
 								},
 								{
-									label: "Pods con más de un contenedor",
+									label: "Pod con más de un contenedor",
 									slug: "how-to/shell-de-un-contenedor/pod-con-mas-contenedor",
 								},
 							],
