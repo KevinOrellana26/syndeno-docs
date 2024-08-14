@@ -1,6 +1,5 @@
 ---
 title: Shell
-description: A guide in my new Starlight docs site.
 ---
 
 En esta terminal dependiendo de la interfaz de usuario de la línea de 
@@ -18,4 +17,9 @@ como por ejemplo: **ps**, **netstat**, **top**, **strace**, etc.
 * Acceder a recursos de red: Puedes utilizar herramientas de red como **ping**, **curl**, **wget**, **netcat**, **traceroute**, etc., para verificar la conectividad de red o acceder a recursos externos.
 * Monitorear recursos: Puedes usar herramientas como **top**, **htop**, **iotop**, etc., para monitorear el uso de CPU, memoria y E/S dentro del contenedor.
 
-[![Shell](/src/content/docs/img/shell.png "Shell")](/src/content/docs/img/shell.png)
+<div style="text-align: center;">
+  <a href="/src/content/docs/img/shell.png">
+    <img src="/src/content/docs/img/shell.png" alt="Shell" title="Shell" style="max-width: 100%; height: auto;">
+  </a>
+  <p><em>Shell</em></p>
+</div>

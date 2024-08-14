@@ -120,16 +120,16 @@ export default defineConfig({
 							],
 						},
 						{
-							label: "Shell de un contenedor",
+							label: "Acceder a la Shell",
 							collapsed: true,
 							items: [
 								{
-									label: "Abrir shell para pods con un contenedor",
-									slug: "how-to/shell-de-un-contenedor/abrir-shell-de-pod-con-un-contenedor",
+									label: "Pods con un único contenedor",
+									slug: "how-to/shell-de-un-contenedor/pod-con-un-contenedor",
 								},
 								{
-									label: "Abrir shell para pods con más de un contenedor",
-									slug: "how-to/shell-de-un-contenedor/abrir-shell-de-pod-con-mas-contenedor",
+									label: "Pods con más de un contenedor",
+									slug: "how-to/shell-de-un-contenedor/pod-con-mas-contenedor",
 								},
 							],
 						},
