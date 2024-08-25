@@ -1,22 +1,32 @@
 ---
 title: Pipelines
+tableOfContents: false
 ---
 
-Un pipeline es un template configurable a partir del cual puedes crear múltiples aplicaciones en distintos entornos.
+Un **Pipeline** en Syndeno es un template configurable que te permite crear múltiples aplicaciones en distintos entornos.
 
-Estará vinculado al repositorio de GitHub de tu aplicación y podrás agregar distintas configuraciones como archivos y variables de entorno para tus aplicaciones creadas a partir de él.
-Al igual que de Proyecto a Entorno, podrás crear variables de pipeline para aplicaciones las cuales serán heredadas por cada aplicación creada a partir de ese pipeline en cualquier entorno perteneciente al proyecto y darles valor desde cada aplicación.
-
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/var-job.png">
-    <img src="/src/content/docs/img/devops/var-job.png" alt="Variables para el job" title="Variables para el job" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>variables para el job</em></p>
+Cada pipeline está vinculado al **repositorio de GitHub** de tu aplicación y te permite agregar diversas configuraciones, como archivos y variables de entorno. que serán aplicadas a las aplicaciones a partir de él.
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/pipeline/pipeline.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/pipeline/pipeline.png" alt="pipeline" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/git.png">
-    <img src="/src/content/docs/img/devops/git.png" alt="Git" title="Git" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>añadiendo repositorio</em></p>
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/pipeline/repositorio.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/pipeline/repositorio.png" alt="repositorio" style="max-width: 100%; height: auto;">
+    </a>
+</div>
+
+* **Variables del Pipeline:** Al igual que con los proyectos y entornos, puedes definir variables específicas para el pipeline. Estas variables serán heredadas por todas las aplicaciones creadas a partir de ese pipeline, independientemente del entorno en el que se encuentren, Puedes asignar valores a estas variables directamente desde cada aplicación, permitiendo una configuración flexible y personalizada.
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/pipeline/var-pipeline.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/pipeline/var-pipeline.png" alt="var-pipeline" style="max-width: 100%; height: auto;">
+    </a>
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/pipeline/add-var-pipeline.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/pipeline/add-var-pipeline.png" alt="add-var-pipeline" style="max-width: 100%; height: auto;">
+    </a>
 </div>

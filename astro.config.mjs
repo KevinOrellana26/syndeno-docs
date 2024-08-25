@@ -9,15 +9,19 @@ export default defineConfig({
 	},
 	integrations: [
 		starlight({
-			favicon: '/favicon.ico', // LOGO PARA QUE SE VEA EN LA PESTAÑA /public/favicon.ico
+			favicon: '/favicon.ico', //LOGO PESTAÑA
 			title: "Syndeno Docs",
+			customCss: [
+				"./src/styles/custom.css",
+			],
 			social: {
 				github: "https://github.com/syndeno",
 				linkedin: "https://www.linkedin.com/company/syndeno",
 				"x.com": "https://twitter.com/syndeno",
 			},
 			logo: {
-				src: './src/assets/logo-text.svg', //PEDIRLE A AIRAM QUE ME PASE UN LOGO DE SYNDENO
+				light: '/src/assets/logo-navbar-dark.png',
+				dark: '/src/assets/logo-navbar-light.png',
 				replacesTitle: true,
 			},
 			sidebar: [
@@ -26,17 +30,16 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{
-							label: "Syndeno Platform",
+							label: "Introducción a Syndeno Platform",
 							slug: "getting-started/syndeno-platform",
 						},
 						{
-							label: "¿Cómo funciona Syndeno?",
+							label: "Funcionamiento de Syndeno",
 							slug: "getting-started/how-to-work-syndeno",
 						},
-						{ label: "Interfaz web", slug: "getting-started/web-interface" },
+						{ label: "Interfaz web de Syndeno", slug: "getting-started/web-interface" },
 						{
 							label: "Ecosistema Syndeno",
-							collapsed: true,
 							items: [
 								{
 									label: "Kubernetes",
@@ -96,7 +99,7 @@ export default defineConfig({
 					//autogenerate: { directory: 'reference' },
 					items: [
 						{
-							label: "Login and Sign Up",
+							label: "Iniciar sesión",
 							slug: "how-to/login-and-signup/login-and-signup",
 						},
 						{
@@ -105,11 +108,11 @@ export default defineConfig({
 							items: [
 								{
 									label: "Pod con un único contenedor",
-									slug: "how-to/logs-de-un-contenedor/ver-logs-pod-unico-contenedor",
+									slug: "how-to/visualizar-logs/pod-unico-contenedor",
 								},
 								{
-									label: "Pod con más de un contenedor",
-									slug: "how-to/logs-de-un-contenedor/ver-logs-pod-con-mas-contenedor",
+									label: "Pod con múltiples contenedores",
+									slug: "how-to/visualizar-logs/pod-con-mas-contenedor",
 								},
 							],
 						},
@@ -128,8 +131,38 @@ export default defineConfig({
 							],
 						},
 						{
-							label: "Pasos para levantar una Aplicación",
-							slug: "how-to/pasos-para-levantar-app",
+							label: "Desplegar una Aplicación",
+							collapsed: true,
+							items: [
+								{
+									label: "Creación de proyecto",
+									slug: "how-to/pasos-para-levantar-app/crear-proyecto",
+								},
+								{
+									label: "Configuración del Pipeline",
+									slug: "how-to/pasos-para-levantar-app/conf-pipeline",
+								},
+								{
+									label: "Variables de entorno en el Pipeline",
+									slug: "how-to/pasos-para-levantar-app/cargar-var-entorno-pipeline",
+								},
+								{
+									label: "Comandos en despliegue",
+									slug: "how-to/pasos-para-levantar-app/ejecutar-cmds-despliegue",
+								},
+								{
+									label: "Configuración de dominio",
+									slug: "how-to/pasos-para-levantar-app/conf-dominio",
+								},
+								{
+									label: "Creación de aplicación",
+									slug: "how-to/pasos-para-levantar-app/crear-app-dentro-entorno",
+								},
+								{
+									label: "Estado del job",
+									slug: "how-to/pasos-para-levantar-app/ver-estado-job",
+								},
+							],
 						},
 					],
 				},

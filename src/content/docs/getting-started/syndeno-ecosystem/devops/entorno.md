@@ -1,48 +1,54 @@
 ---
 title: Entornos
+tableOfContents: false
 ---
 
-En un entorno podrás desplegar tus aplicaciones y servicios creados a partir de Pipelines pertenecientes al Proyecto como así también configurar el dominio de tu aplicación.
-* **Desplegar**: con este botón podrás desplegar 1 o más aplicaciones en tu entorno.
-* **Crear Jobs**: con este botón pueden crearse 1 o más aplicaciones a partir de un Pipeline perteneciente al Proyecto.
-* **Variables del entorno**: en esta tab podemos darle valor a las variables heredadas desde el Proyecto contenedor.
-* **Recursos**: en esta tab podemos ver los recursos de Kubernetes asociados a este entorno como namespace.
-* **Configuración**: en esta tab podemos configurar el dominio de la aplicación.
+En un entorno, puedes desplegar y gestionar tus aplicaciones y servicios creados a partir de pipelines pertenecientes al proyecto. Además, puedes configurar el dominio de tu aplicación. Las funcionalidades disponibles en un entorno incluyen:
 
-En la tabla podemos observar la fecha de la última ejecución y resultado de cada aplicación perteneciente al Entorno.
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/entorno.png">
-    <img src="/src/content/docs/img/devops/entorno.png" alt="entorno" title="entorno" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>vista general del entorno</em></p>
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/entorno/entorno.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/entorno/entorno.png" alt="entorno" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-## Aplicaciones/Servicios
-Dentro de una aplicación/servicio podrás realizar distintas configuraciones como añadir archivos o variables de entorno para la aplicación. También podrás desplegarlas y ver su progreso en tiempo real. Todos tus despliegues tendrán un apartado de Logs en los cuales podrás ver errores en el despliegue o información en tiempo real.
-* **Desplegar**: crear la imagen y reinicia el pod.
-* **Construir imagen**: crea la imagen.
-* **Actualizar**: actualiza los parámetros de la aplicación.
-* **Reiniciar**: recargar recursos de Kubernetes.
-* **Acciones personalizadas**: distintas acciones personalizadas de ejecución.
-* **Git**: en esta tab puedes configurar el repositorio de GitHub y desplegar una rama o tag en particular.
-* **Recursos**: en esta tab podemos ver los recursos de Kubernetes asociados a este job como Pod.
-* **Archivos**: aquí podemos crear archivos que luego de desplegar la aplicación serán agregados al contenedor del Pod.
-* **Archivos de pipeline**: en esta tab podemos ver archivos heredados del Pipeline a partir del cual se creó la aplicación.
-* **Variables del job**: aquí agregamos variables de entorno para la aplicación las cuales serán creadas en el contenedor del Pod.
-* **Variables del pipeline**: en esta tab podemos ver variables de entorno heredadas de el Pipeline a partir del cual se creó la aplicación.
-* **Comandos**: aquí podemos definir comandos que se ejecutarán en distintas etapas del despliegue de la aplicación.
-* **Método de construcción de imágenes**: se puede elegir si el despliegue se hace de forma nativa o con kaniko.
+* **Desplegar:** utiliza este botón para desplegar una o más aplicaciones en tu entorno. Esto permite que las aplicaciones estén operativas y accesibles en el entorno seleccionado.
+* **Vista general:** en esta pestaña puedes ver todos los jobs creados en este entorno. 
+* **Parámetros:** en esta pestaña puedes crear, buscar y configurar variables de entorno que luego se aplican a los jobs del entorno seleccionado.
+* **Recursos:** esta pestaña muestra los recursos de Kubernetes asociados a este entorno, como el namespace. Aquí puedes consultar y gestionar los recursos utilizados por las aplicaciones en el entorno.
+* **Configuración:** en esta pestaña, puedes configurar el dominio de la aplicación, asegurando que las aplicaciones sean accesibles a través de URLs específicas y personalizadas.
 
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/historial-pipeline.png">
-    <img src="/src/content/docs/img/devops/historial-pipeline.png" alt="historial de pipelines ejecutados" title="historial de pipelines ejecutados" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Historial de Pipelines ejecutados, podemos consultar las últimas 10 construcciones</em></p>
+En la tabla asociada al entorno, puedes observar la fecha de la última ejecución y el resultado de cada aplicación desplegada en el entorno, proporcionando una visión clara del estado y rendimiento de tus aplicaciones.
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/entorno/aplicacion-servicio.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/entorno/aplicacion-servicio.png" alt="aplicacion-servicio" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/logs-pipeline-terminado.png">
-    <img src="/src/content/docs/img/devops/logs-pipeline-terminado.png" alt="logs de pipeline terminado" title="logs de pipeline terminado" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Logs de un Pipeline que ha terminado su ejecución</em></p>
+## Aplicaciones y Servicios
+Dentro de una aplicación o servicio, podrás realizar diversas configuraciones y gestiones, incluyendo la adición de archivos y variables de entorno, así como el despliegue y progreso en tiempo real. Cada despliegue cuenta con un apartado de **Logs**, donde podrás revisar errores y obtener información actualizada. Las funcionalidades disponibles son:
+
+* **Desplegar:** crea la imagen y reinicia el pod asociado. Esto asegura que los cambios se apliquen y la aplicación se actualice en el entorno.
+* **Reiniciar:** recarga los recursos de Kubernetes relacionados con la aplicación. Esta acción puede ser útil para aplicar cambios en la configuración o solucionar problemas.
+* **Construir Imagen:** genera la imagen de la aplicación. Este paso es esencial para crear el contenedor que se desplegará.
+* **Acciones Personalizadas:** ejecuta diversas acciones personalizadas definidas según las necesidades específicas de la aplicación o del entorno.
+* **Builds:** se muestra un historial de builds de un Job.
+* **Git:** configura el repositorio de GitHub asociado a la aplicación y despliega una rama o etiqueta específica. Esta pestaña permite integrar el control de versiones directamente con el despliegue.
+* **Archivos:** crea archivos que se añadirán al contenedor del pod una vez que la aplicación sea desplegada. Esto facilita la inclusión de archivos de configuración o datos necesarios para la aplicación.
+* **Variables del Job:** añade variables de entorno específicas para la aplicación, las cuales serán configuradas en el contenedor del pod.
+* **Variables del Pipeline:** muestra las variables de entorno heredadas del pipeline. Estas variables son aplicadas automáticamente a la aplicación creada a partir del pipeline.
+* **Comandos:** define comandos que se ejecutarán en diferentes etapas del despliegue de la aplicación. Esto permite personalizar el proceso de despliegue según las necesidades específicas.
+* **Método de Construcción de Imágenes:** elige si el despliegue se realiza de forma nativa o utilizando Kaniko.
+
+Historial de Pipelines ejecutados:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/entorno/job.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/entorno/job.png" alt="job" style="max-width: 100%; height: auto;">
+    </a>
+</div>
+
+Logs de un Pipeline que ha terminado su ejecución:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/entorno/logs-job.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/entorno/logs-job.png" alt="llogs-job" style="max-width: 100%; height: auto;">
+    </a>
 </div>

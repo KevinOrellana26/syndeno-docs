@@ -1,13 +1,17 @@
 ---
 title: Proyectos
+tableOfContents: false
 ---
 
-Un proyecto en Syndeno es una entidad en la cual se alojarán tus distintos entornos y pipeline. En ellos puedes agregar variables propias del proyecto o variables para entorno las cuales serán heredadas por todos sus entornos. Las variables de sus entornos serán cargadas con su nombre en un listado y más tarde se podrá entrar a cada entorno para darle el valor que uno quiera a ese parámetro para ese entorno, luego estos parámetros serán heredados por las aplicaciones pertenecientes a ese entorno.
+Un proyecto de Syndeno es una entidad en la cual se alojarán tus diferentes entornos y pipelines. Dentro de un proyecto, puedes agregar parámetros 
 
+* **Variables del proyecto:** son globales y se heredan en todos los entornos asociados al proyecto.
+* **Variables para entornos:** se heredan por los entornos específicos y son cargadas en un listado con su nombre. Posteriormente, puedes asignar valores a estas variables dentro de cada entorno específico.
 
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/proyecto.png">
-    <img src="/src/content/docs/img/devops/proyecto.png" alt="variables para entorno" title="variables para entorno" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>variables para entorno</em></p>
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/proyecto/" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/proyecto/" alt="proyecto" style="max-width: 100%; height: auto;">
+    </a>
 </div>
+
+Los valores asignados a las variables de entorno serán heredados por todas las aplicaciones dentro de ese entorno, asegurando que las configuraciones específicas se apliquen adecuadamente en cada contexto.

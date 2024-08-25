@@ -1,38 +1,34 @@
 ---
-title: Pods con un contenedor
+title: Pod con un único contenedor
+tableOfContents: false
 ---
 
-En este apartado se describe cómo abrir una Shell para un Pod con un contenedor desde la Syndeno Platform. Los pasos incluyen navegar al namespace correspondiente, seleccionar el Pod deseado de la lista, y acceder a la pestaña "Terminal" dentro del Pod. Desde allí, se puede iniciar la Shell y comenzar a ejecutar comandos dentro del contenedor.
+A continuación se describe el proceso para abrir una Shell en un Pod con un único contenedor desde la Syndeno Platform:
 
-
-Para esto se debe navegar a Namespaces:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/nav-namespace.png">
-    <img src="/src/content/docs/img/nav-namespace.png" alt="lista de namespaces" title="lista de namespaces" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Lista de namespaces</em></p>
+1. Navegar a Namespaces:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/how-to/shell/pod-unico-contenedor/namespaces.png" target="_blank">
+        <img src="/src/content/docs/img/how-to/shell/pod-unico-contenedor/namespaces.png" alt="namespaces" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Seleccionar el namespace donde se encuentra el Pod en el cual queremos utilizar la Shell:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/recursos-dentro-de-namespace.png">
-    <img src="/src/content/docs/img/recursos-dentro-de-namespace.png" alt="recursos del namespace" title="recursos del namespace" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Recursos creados en namespace</em></p>
+2. Selecciona el namespace adecuado:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/how-to/shell/pod-unico-contenedor/recursos.png" target="_blank">
+        <img src="/src/content/docs/img/how-to/shell/pod-unico-contenedor/recursos.png" alt="recursos" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Entrar a la lista de Pods y seleccionar el indicado:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/lista-pods.png">
-    <img src="/src/content/docs/img/lista-pods.png" alt="lista de pods" title="lista de pods" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Lista de pods</em></p>
+3. Selecciona el Pod deseado:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/how-to/shell/pod-unico-contenedor/pods.png" target="_blank">
+        <img src="/src/content/docs/img/how-to/shell/pod-unico-contenedor/pods.png" alt="pods" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Luego dentro del Pod seleccionado, en la tab "Terminal", darle al botón de play y empezar a escribir comandos:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/shell.png">
-    <img src="/src/content/docs/img/shell.png" alt="Shell" title="Shell" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Shell</em></p>
+4. Accede a la pestaña **"Terminal"** y haz clic en ▶️ para abrir la Shell y comenzar a escribir y ejecutar comandos dentro del contenedor:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/how-to/shell/pod-unico-contenedor/terminal.png" target="_blank">
+        <img src="/src/content/docs/img/how-to/shell/pod-unico-contenedor/terminal.png" alt="terminal" style="max-width: 100%; height: auto;">
+    </a>
 </div>

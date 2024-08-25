@@ -1,7 +1,7 @@
 @org.jenkinsci.plugins.workflow.libs.Library('syndeno-lib@v5-stable') _
 
-pipelineKubernetesJobGoogle {
-    name = "syndeno-wiki"
+pipelineKubernetesJobAzure {
+    name = "syndeno-docs"
 
     pipelineParameters = []
 
@@ -9,19 +9,19 @@ pipelineKubernetesJobGoogle {
 
     build = [
         newKubernetesBuild {
-            name = "syndeno-wiki"
+            name = "syndeno-docs"
             srcPath = "."
 
             prepareCommands = """
             """.stripIndent()
 
             def namespace = this.params.SYN_ENVIRONMENT_name
-            def imageName = this.params.GCP_container_registry + '/' + this.params.GCP_container_registry_folder + '/' + 'syndeno-wiki-' + namespace
+            def imageName = this.params.SYN_ENVIRONMENT_name ? "${this.params.SYN_AZURE_container_registry}.azurecr.io/syndeno-docs-${this.params.SYN_ENVIRONMENT_name}"
             def fqdn = "docs.syndeno.cloud"
 
             images = [
                 [
-                    name: 'syndeno-wiki',
+                    name: 'syndeno-docs',
                     image: imageName,
                     basePath: '.',
                     tags: 'latest',
@@ -34,12 +34,12 @@ pipelineKubernetesJobGoogle {
 
             deployments = [
                 [
-                    name: "syndeno-wiki",
+                    name: "syndeno-docs",
                     namespace: namespace,
                     replicas: 1,
                     containers: [
                         [
-                            name: 'syndeno-wiki',
+                            name: 'syndeno-docs',
                             imageName: imageName,
                             imageTag: "latest",
                             probePort: 80,
@@ -63,7 +63,7 @@ pipelineKubernetesJobGoogle {
 
             ingresses = [
                 [
-                    name: "wiki-ingress",
+                    name: "syndeno-docs-ingress",
                     namespace: namespace,
                     cert_issuer: 'syndeno-issuer',
                     ingressClass: 'nginx',
@@ -72,7 +72,7 @@ pipelineKubernetesJobGoogle {
                         [
                             host: fqdn,
                             path: "/",
-                            serviceName: "syndeno-wiki-np",
+                            serviceName: "syndeno-docs-np",
                             servicePort: 80
                         ]
                     ]
@@ -81,11 +81,11 @@ pipelineKubernetesJobGoogle {
 
             nodePorts = [
                 [
-                    name: "syndeno-wiki-np",
+                    name: "syndeno-docs-np",
                     namespace: namespace,
                     port: 80,
                     targetPort: 80,
-                    selector: 'syndeno-wiki'
+                    selector: 'syndeno-docs'
                 ]
             ]
         }

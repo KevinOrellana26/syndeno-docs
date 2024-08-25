@@ -1,242 +1,222 @@
 ---
 title: Jobs
 ---
-Guía sobre cómo gestionar variables de entorno, archivos y el despliegue del Jobs en Syndeno Platform. Explica cómo agregar y configurar variables de entorno tanto desde el Pipeline como directamente en un Job específico. Además, detalla el proceso para añadir archivos necesarios al contenedor de un Job, ya sea desde el Pipeline o dentro del Job mismo. Finalmente, se describe cómo desplegar un Job, destacando las opciones disponibles desde el entorno y desde el Job, incluyendo la posibilidad de ejecutar múltiples Jobs simultáneamente desde el entorno. 
+
+Esta guía proporciona instrucciones detalladas sobre la gestión de variables de entorno, archivos, y el despliegue de *Jobs* en desde Syndeno Platform. Se explica cómo agregar y configurar variables de entorno tanto a nivel de *Pipeline* como en un *Job* específico. Además, se describe el proceso para incorporar archivos necesarios en el contenedor de un *Job*, ya sea desde el *Pipeline* o directamente dentro del *Job*. Por último, la guía detalla cómo desplegar un *Job*, resaltando las diversas opciones disponibles, tanto desde el entorno como desde el *Job* individual, incluyendo la capacidad de ejecutar múltiples *Jobs* simultáneamente. 
 
 ## Variables de Entorno
-Para agregar variables de entorno a un Job o Aplicación podemos hacerlo desde el Pipeline con el cual fue creado o desde el Job en cuestión.
+Las variables de entorno pueden ser añadidas a un *Job* o una aplicacicación de dos maneras: directamente desde el *Pipeline* utilizado para su creación, o configurándolas específicamente dentro del *Job* en cuestión.
 
-### En el pipeline
-Podemos navegar desde Proyectos, elegir el proyecto donde se encuentra el pipeline:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/select-project.png">
-    <img src="/src/content/docs/img/devops/select-project.png" alt="select project" title="select project" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Lista de Proyectos</em></p>
+### En el Pipeline
+Para agregar variables de entorno desde el *Pipeline*, navega a la sección de **Proyectos** y selecciona el proyecto que contiene el *Pipeline* correspondiente.
+
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/proyectos.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/proyectos.png" alt="proyectos" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Y luego seleccionamos el pipeline correspondiente: 
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/pipeline-project.png">
-    <img src="/src/content/docs/img/devops/pipeline-project.png" alt="Pipeline project" title="Pipeline project" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Lista de Pipelines</em></p>
+A continuación, selecciona el *Pipeline* correspondiente dentro del proyecto:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/pipeline.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/pipeline.png" alt="pipeline" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Ya dentro del Pipeline podemos crear variables para los jobs que tenemos creados a partir de él:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/var-job-pipeline.png">
-    <img src="/src/content/docs/img/devops/var-job-pipeline.png" alt="variables del job" title="variables del job" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Variables del Job</em></p>
+Una vez dentro del *Pipeline*, podrás crear y configurar variables para el job que serán heredadas por los *Jobs* creados a partir de ese *Pipeline*:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/var-job.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/var-job.png" alt="variables-job" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-O bien podemos realizar el mismo proceso utilizando el atajo en el sidebar y navegar directo al pipeline:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/atajo-sidebar.png">
-    <img src="/src/content/docs/img/devops/atajo-sidebar.png" alt="atajo sidebar" title="atajo sidebar" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Atajo sidebar</em></p>
+Alternativamente, puedes realizar el mismo proceso utilizando el atajo en el **sidebar**, navegando directamente al *Pipeline* para acceder rápidamente a la configuración de variables.
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/sidebar-pipeline.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/sidebar-pipeline.png" alt="sidebar-pipeline" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Por último podemos navegar a los Jobs donde queramos darle valor a estas variables desde la Tab "Jobs":
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/pestana-job.png">
-    <img src="/src/content/docs/img/devops/pestana-job.png" alt="pestaña del job" title="pestaña del job" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Pestaña para editar el Job</em></p>
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/sidebar-pipeline-var-job.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/sidebar-pipeline-var-job.png" alt="sidebar-pipeline-var-job" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Una vez dentro del Job podemos darles valor en la tab "Variables del pipeline": 
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/pestana-var-pipeline.png">
-    <img src="/src/content/docs/img/devops/pestana-var-pipeline.png" alt="pestaña variable del pipeline" title="pestaña variable del pipeline" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Pestaña variable del pipeline</em></p>
+
+Finalmente, puedes navegar a los *Jobs* en los que deseas asignar valores a estas variables desde la pestaña **"Jobs"**:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/jobs.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/jobs.png" alt="jobs" style="max-width: 100%; height: auto;">
+    </a>
+</div>
+
+Una vez dentro del *Job*, puedes asignar valores a las variables en la pestaña **"Variables del Pipeline"**: 
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/var-pipeline.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/var-pipeline.png" alt="var-pipeline" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
 ### En el Job
-Para agregar una variable de entorno para un job en específico podemos hacer la navegación anterior hasta seleccionar un proyecto pero ahora nos vamos a dirigir a la tab de Entornos y seleccionaremos el Entorno donde tenemos alojado el Job en cuestión:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/list-entornos.png">
-    <img src="/src/content/docs/img/devops/list-entornos.png" alt="listado de entornos" title="listado de entornos" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Listado de entornos</em></p>
+Para agregar una variable de entorno a un *Job* específico, sigue los pasos anteriores para seleccionar el proyecto. Luego, dirígete a la pestaña **"Entornos"** y selecciona el entorno que aloja el *Job* en cuestión:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/entorno.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/entorno.png" alt="entorno" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Una vez dentro del Entorno, clickeamos el nombre de el Job deseado:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/entorno-job.png">
-    <img src="/src/content/docs/img/devops/entorno-job.png" alt="seleccionar job" title="seleccionar job" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Jobs creados dentro del entorno</em></p>
+Una vez dentro del entorno haz clic en el nombre del *Job* deseado:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/job-entorno.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/job-entorno.png" alt="jobs-desde-entorno" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Vamos a la tab “Variables del job” y agregamos las deseadas y luego damos al
-botón “Guardar”:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/var-job-entorno.png">
-    <img src="/src/content/docs/img/devops/var-job-entorno.png" alt="pestaña variable del job" title="pestaña variable del job" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Pestaña variable del job</em></p>
+Luego ve a la pestaña **"Variables del Job"**, agrega las variables deseadas y haz clic en el botón **"Guardar"**:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/add-var-job.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/add-var-job.png" alt="add-var-jobs" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
 ## Archivos
-Recordar que para que los archivos estén disponibles en el contenedor del job se debem copiar en el DockerFile
+:::note
+Recuerda que para que los archivos estén disponibles en el contenedor del *Job*, deben ser copiados en el Dockerfile.
+:::
+
 <div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/dockerfile.png">
-    <img src="/src/content/docs/img/devops/dockerfile.png" alt="dockerfile" title="dockerfile" style="max-width: 100%; height: auto;">
+  <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/dockerfile.png">
+    <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/dockerfile.png" alt="dockerfile" title="dockerfile" style="max-width: 100%; height: auto;">
   </a>
   <p><em>DockerFile</em></p>
 </div>
 
-Para agregar Archivos a un Job o Aplicación podemos hacerlo desde el Pipeline
-con el cual fue creado o desde el Job en cuestión.
+Para agregar Archivos a un *Job* o aplicación, puedes hacerlo desde el *Pipeline*
+con el cual fue creado, o directamente desde el *Job* en cuestión.
 
 ### En el Pipeline
-Podemos navegar desde Proyectos, elegir el proyecto donde se encuentra el
-pipeline:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/list-projects.png">
-    <img src="/src/content/docs/img/devops/list-projects.png" alt="lista de proyectos" title="lista de proyectos" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Lista de proyectos</em></p>
+Para agregar archivos desde el *Pipeline*, sigue estos pasos:
+
+Navega a la sección de **Proyectos** y selecciona el proyecto que contiene el *Pipeline*, una vez dentro, selecciona el *Pipeline* correspondiente dentro del proyecto:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/pipeline.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/pipeline.png" alt="pipeline" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-
-Y luego seleccionamos el pipeline correspondiente:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/pipeline-project.png">
-    <img src="/src/content/docs/img/devops/pipeline-project.png" alt="lista de pipelines" title="lista de pipeline" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Listado de Pipelines</em></p>
+Una vez dentro del *Pipeline*, puedes cargar archivos que estarán disponibles para los *Jobs* creados a partir de él:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/add-archivo.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/add-archivo.png" alt="add-archivo" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Ya dentro del Pipeline podemos cargar archivos para los jobs que tenemos
-creados a partir de él:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/cargar-file-job.png">
-    <img src="/src/content/docs/img/devops/cargar-file-job.png" alt="archivos" title="archivos" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Archivos para los Jobs</em></p>
+Alternativamente, puedes realizar el mismo proceso utilizando el atajo en la **sidebar** para navegar directamente al *Pipeline*:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/sidebar-pipeline.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/sidebar-pipeline.png" alt="sidebar-pipeline" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-O bien podemos realizar el mismo proceso utilizando el atajo en la sidebar y
-navegar directo al pipeline:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/atajo-sidebar.png">
-    <img src="/src/content/docs/img/devops/atajo-sidebar.png" alt="atajo sidebar" title="atajo sidebar" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Atajo sidebar</em></p>
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/add-archivo.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/add-archivo.png" alt="add-archivo" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/cargar-file-job.png">
-    <img src="/src/content/docs/img/devops/cargar-file-job.png" alt="archivos" title="archivos" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Archivos para los Jobs</em></p>
+Finalmente, navega a los *Jobs* donde has añadido archivos desde la pestaña **"Jobs"**:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/jobs.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/jobs.png" alt="jobs" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Por último podemos navegar a los Jobs donde añadimos archivos desde la Tab
-“Jobs”:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/pestana-job.png">
-    <img src="/src/content/docs/img/devops/pestana-job.png" alt="pestaña del job" title="pestaña del job" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Pestaña Job</em></p>
-</div>
-
-Una vez dentro del Job podemos visualizarlos en la tab “Archivos de pipeline”:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/file-pipeline.png">
-    <img src="/src/content/docs/img/devops/file-pipeline.png" alt="archivos del pipeline" title="archivos del pipeline" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Pestaña Archvos del Pipeline</em></p>
+Una vez dentro del *Job* puedes visualizar los archivos en la pestaña **"Archivos"**:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/archivo-creado.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/archivo-creado.png" alt="archivo-creado" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
 ### En el Job
-Para agregar un Archivo en un job en específico podemos hacer la navegación
-anterior hasta seleccionar un proyecto pero ahora nos vamos a dirigir a la tab de
-Entornos y seleccionaremos el Entorno donde tenemos alojado el Job en
-cuestión:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/list-entornos.png">
-    <img src="/src/content/docs/img/devops/list-entornos.png" alt="listado de entornos" title="listado de entornos" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Listado de entornos</em></p>
+Para agregar un archivo a un *Job* específico, sigue estos pasos:
+
+1. Navega a la sección de **Proyectos** y selecciona el proyecto:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/proyectos.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/proyectos.png" alt="proyectos" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Una vez dentro del Entorno, clickeamos el nombre de el Job deseado:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/entorno-job.png">
-    <img src="/src/content/docs/img/devops/entorno-job.png" alt="seleccionar job" title="seleccionar job" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Jobs creados dentro del entorno</em></p>
+2. Dirígete a la pestaña **"Entornos"** y selecciona el entorno que aloja el *Job* en cuestión.
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/entorno.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/entorno.png" alt="entorno" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Vamos a la tab “Archivos”, agregamos los deseados y luego damos al botón
-“Guardar”:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/tab-archivos-job.png">
-    <img src="/src/content/docs/img/devops/tab-archivos-job.png" alt="tab archivos" title="tab archivos" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Tab Archivos</em></p>
+3. Una vez dentro del entorno, haz clic en el nombre del *Job* deseado. 
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/job-entorno.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/job-entorno.png" alt="job-entorno" style="max-width: 100%; height: auto;">
+    </a>
+</div>
+
+4. Ve a la pestaña **"Archivos"**, agrega los archivos que necesitas y luego haz clic en el botón **"Guardar"**:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/add-archivo-entorno.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/add-archivo-entorno.png" alt="add-archivo-entorno" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
 ## Pasos para desplegar un Job
-Podemos desplegar un Job desde dos lugares:
-* Entorno
-* Job
+Puedes desplegar un *Job* desde dos ubicaciones:
+* **Entorno**
+* **Job**
 
 ### Desde su entorno
-Navegamos al Entorno donde está el Job desde el atajo de Entornos en la
-sidebar o desde un proyecto:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/list-entornos-all-projects.png">
-    <img src="/src/content/docs/img/devops/list-entornos-all-projects.png" alt="listado de entorno"o title="listado de entorno" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Listado de entornos</em></p>
+1. Navega al entorno que contiene el *Job* utilizando el atajo de **Entornos** en la **sidebar** o accediendo a través de un proyecto:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/entorno-demo.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/entorno-demo.png" alt="entorno" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Entramos al entorno donde se encuentra el Job:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/entorno-job.png">
-    <img src="/src/content/docs/img/devops/entorno-job.png" alt="seleccionar job" title="seleccionar job" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Jobs creados dentro del entorno</em></p>
+2. Accede al entorno donde se encuentra el *Job*:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/list-jobs.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/list-jobs.png" alt="job-entorno" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Seleccionamos el que queramos en la tabla y le damos al botón **Desplegar**:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/deploy-job.png">
-    <img src="/src/content/docs/img/devops/deploy-job.png" alt="desplegar job" title="desplegar job" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Desplegando Job</em></p>
-  <i><b>Cabe destacar que desde el Entorno podemos seleccionar más de un job
-y ejecutar Múltiples a la vez.</b></i>
+3. Selecciona el *Job* deseado en la tabla y haz clic en el botón **Desplegar**:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/desplegar-job.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/desplegar-job.png" alt="desplegar-job" style="max-width: 100%; height: auto;">
+    </a>
+</div>
+
+:::note
+Cabe destacar que desde el entorno puedes seleccionar varios Jobs y desplegarlos simultáneamente.
+:::
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/desplegar-varios-jobs.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/desplegar-varios-jobs.png" alt="desplegar-jobs" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
 ### Desde el Job
-Podemos navegar desde el atajo en la sidebar o podemos ingresar desde su entorno:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/atajo-sidebar-job.png">
-    <img src="/src/content/docs/img/devops/atajo-sidebar-job.png" alt="atajo sidebar" title="atajo sidebar" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Atajo sidebar</em></p>
+1. Puedes navegar al *Job* utilizando el atajo en la **sidebar** o accediendo a él desde su entorno:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/sidebar-job.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/sidebar-job.png" alt="sidebar-jobs" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-Ingresamos al Job:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/historial-builds.png">
-    <img src="/src/content/docs/img/devops/historial-builds.png" alt="historial builds" title="historial builds" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Historial builds</em></p>
-</div>
-
-Y finalmente, le damos a una de las opciones de ejecución brindadas:
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/devops/lanzar-ejecucion.png">
-    <img src="/src/content/docs/img/devops/lanzar-ejecucion.png" alt="lanzar ejecucion" title="lanzar ejecucion" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Lanzando ejecución</em></p>
+2. Una vez dentro del *Job*, selecciona una de las opciones de ejecución disponibles:
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/desplegar-job-demo.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/devops/job-img/desplegar-job-demo.png" alt="desplegar-job-demo" style="max-width: 100%; height: auto;">
+    </a>
 </div>

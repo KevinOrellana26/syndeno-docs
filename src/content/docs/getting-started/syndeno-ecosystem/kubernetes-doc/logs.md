@@ -1,25 +1,46 @@
 ---
 title: Logs
+tableOfContents: false
 ---
 
-En esta terminal podrás ver logs de tus aplicaciones, existen 2 formas de acceder, una en el menú de la izquierda
-pulsando e Logs y luego ahí dentro pulsando el botón de play después de elegir el entorno y la aplicación y la otra también en el menú de la izquierda dándole a Namespaces -> Pods y luego dentro de la aplicación deseada en la "**tab de Logs**" dándole de nuevo a Play. 
+En esta terminal, podrás visualizar los logs de tus aplicaciones. Hay dos formas de acceder a ellos:
 
-En ella podremos:
-* Buscar un log en particular desde un input de búsqueda. Frenar los logs.
+1. Desde el menú de la izquierda, selecciona **Logs** y, después de elegir el entorno y la aplicación, haz clic en el botón de *Play*.
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/logs.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/logs.png" alt="logs" style="max-width: 100%; height: auto;">
+    </a>
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/mostrando-logs.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/mostrando-logs.png" alt="mostrando-logs" style="max-width: 100%; height: auto;">
+    </a>
+</div>
+
+2. También desde el menú de la izquierda, selecciona **Namespaces -> Pods**, luego accede a la aplicación deseada y, en la pestaña de **Logs**, presiona nuevamente el botón de *Play*.
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/forma-acceso-namespace.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/forma-acceso-namespace.png" alt="acceso-namespace" style="max-width: 100%; height: auto;">
+    </a>
+</div>
+
+Dentro de la terminal, podrás realizar las siguientes acciones:
+* Buscar un log específico utilizando el campo de búsqueda.
+* Pausar la visualización de los logs.
 * Limpiar la terminal.
-* Abrir la terminal en modo ventana lo cual nos permitirá tener más de una ventana con logs de diferentes aplicaciones a la vez. 
-
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/kubernetes-img/logs-plataforma.png">
-    <img src="/src/content/docs/img/kubernetes-img/logs-plataforma.png" alt="logs-plataforma" title="logs-plataforma" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Logs dentro de la plataforma</em></p>
+* Abrir la terminal en modo ventana, lo que te permitirá gestionar múltiples ventanas con logs de diferentes aplicaciones simultáneamente.
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/ventana-logs.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/ventana-logs.png" alt="logs" style="max-width: 100%; height: auto;">
+    </a>
 </div>
 
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/kubernetes-img/logs-ventana.png">
-    <img src="/src/content/docs/img/kubernetes-img/logs-ventana.png" alt="logs-ventana" title="logs-ventana" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Logs en ventana independiente</em></p>
+* Crear pestañas para ver los logs de diferentes aplicaciones en paralelo.
+<div style="display: flex; justify-content: center;">
+    <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/tab-logs.png" target="_blank">
+        <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/tab-logs.png" alt="tab-logs" style="max-width: 100%; height: auto;">
+    </a>
 </div>
+
+

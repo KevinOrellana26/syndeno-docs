@@ -1,15 +1,13 @@
 ---
-title: ¿Cómo funciona Syndeno?
+title: Funcionamiento de Syndeno
 ---
 
 Syndeno dispone de una infraestructura sólida y adaptable, estructurada a través del siguiente stack:
 
-<div style="text-align: center;">
-  <a href="/src/content/docs/img/syndeno-PaaS.png">
-    <img src="/src/content/docs/img/syndeno-PaaS.png" alt="Syndeno PaaS" title="Syndeno PaaS" style="max-width: 100%; height: auto;">
-  </a>
-  <p><em>Syndeno PaaS</em></p>
-</div>
+<a href="/src/content/docs/img/getting-started/funcionamiento-syndeno/syndeno-paas.png" target="_blank">
+    <img src="/src/content/docs/img/getting-started/funcionamiento-syndeno/syndeno-paas.png" alt="syndeno-paas">
+</a>
+<p align="center"><i>Syndeno PaaS</i></p>
 
 La imagen muestra el stack que utiliza Syndeno:
 1. Aprovecha tu propia cuenta de Cloud.
