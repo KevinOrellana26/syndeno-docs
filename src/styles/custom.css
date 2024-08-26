@@ -14,32 +14,26 @@
 	--sl-color-black: #17181c;
 }
 */
-/* Light mode colors.*/
-/*
-:root {
-	--sl-color-accent-low: #000000;
-	--sl-color-accent: #223e93;
-	--sl-color-accent-high: #ffffff;
-	--sl-color-white: #ffffff; 
-	--sl-color-gray-1: #eceef2;
-	--sl-color-gray-2: #c0c2c7;
-	--sl-color-gray-3: #888b96;
-	--sl-color-gray-4: #545861;
-	--sl-color-gray-5: #353841;
-	--sl-color-gray-6: #24272f;
-	--sl-color-black: #17181c;
-}
-*/
 
 :root {
-	--sl-color-accent-low: #27384A; /* Para bordes y elementos de división */
-	--sl-color-accent: #2C6EAD; /* Para botones, enlaces y acentos */
-	--sl-color-accent-high: #7FB9D0; /* Para iconos y elementos activos */
-	--sl-color-white: #E1E7EE; /* Color para el texto principal */
-	--sl-color-gray-1: #9AA8B2; /* Para texto secundario */
-	--sl-color-gray-2: #c0c2c7; /* Para el fondo del contenedor principal */
-	--sl-color-gray-3: #0A1725; /* Color de fondo principal */
-	--sl-color-black: #0A1725; /* Color de fondo oscuro principal */
+    /* Colores de tu paleta */
+    --sl-color-primary-dark: #1a2434; /* Azul oscuro */
+    --sl-color-primary: #223E92; /* Azul brillante */
+    --sl-color-accent: #08959c; /* Verde azulado claro */
+    --sl-color-gray-light: #B9B9B9; /* Gris claro */
+
+    /* Colores adicionales de tu configuración */
+    --sl-color-accent-low: #000000;    
+    --sl-color-accent: #223e93;    
+    --sl-color-accent-high: #ffffff;    
+    --sl-color-white: #ffffff;     
+    --sl-color-gray-1: #eceef2;    
+    --sl-color-gray-2: #c0c2c7;    
+    --sl-color-gray-3: #888b96;    
+    --sl-color-gray-4: #545861;    
+    --sl-color-gray-5: #353841;    
+    --sl-color-gray-6: #24272f;    
+    --sl-color-black: #17181c;
 }
 
 /* Light mode colors. */
