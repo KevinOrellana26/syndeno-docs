@@ -7,11 +7,10 @@ export default defineConfig({
 		defaultLocale: "es",
 		locales: ["es"],
 	},
-	site: 'https://www.syndeno.com/',
 	integrations: [
 		starlight({
 			favicon: '/favicon.ico', //LOGO PESTAÑA
-			title: "Syndeno Docs",
+			title: 'Syndeno',
 			customCss: [
 				"./src/styles/custom.css",
 			],
@@ -28,7 +27,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: "Documentación",
-					link: 'https://docs.syndeno.cloud',
+					link: '/',
 				},
 				{
 					label: "Empezar",

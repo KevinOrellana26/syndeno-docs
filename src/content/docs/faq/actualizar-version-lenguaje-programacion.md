@@ -1,6 +1,5 @@
 ---
 title: ¿Cómo actualizar de versión de un lenguaje de programación?
-description: A guide in my new Starlight docs site.
 ---
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
