@@ -7,6 +7,7 @@ export default defineConfig({
 		defaultLocale: "es",
 		locales: ["es"],
 	},
+	site: 'https://www.syndeno.com/',
 	integrations: [
 		starlight({
 			favicon: '/favicon.ico', //LOGO PESTAÑA
@@ -26,9 +27,18 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: "Documentación",
+					link: 'https://docs.syndeno.cloud',
+				},
+				{
+					label: "Empezar",
+					link: 'https://syndeno.cloud/sign-in',
+					attrs: {target: '_blank'},
+				},
+				{
 					label: "Primeros Pasos",
+					collapsed: true,
 					items: [
-						// Each item here is one entry in the navigation menu.
 						{
 							label: "Introducción a Syndeno Platform",
 							slug: "getting-started/syndeno-platform",
@@ -40,6 +50,7 @@ export default defineConfig({
 						{ label: "Interfaz web de Syndeno", slug: "getting-started/web-interface" },
 						{
 							label: "Ecosistema Syndeno",
+							collapsed: true,
 							items: [
 								{
 									label: "Kubernetes",

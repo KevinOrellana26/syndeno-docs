@@ -5,13 +5,14 @@ tableOfContents: false
 
 En esta terminal, podrás visualizar los logs de tus aplicaciones. Hay dos formas de acceder a ellos:
 
-1. Desde el menú de la izquierda, selecciona **Logs** y, después de elegir el entorno y la aplicación, haz clic en el botón de *Play*.
+1. Desde el menú de la izquierda, selecciona **Logs** y, después de elegir el entorno y la aplicación:
 <div style="display: flex; justify-content: center;">
     <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/logs.png" target="_blank">
         <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/logs.png" alt="logs" style="max-width: 100%; height: auto;">
     </a>
 </div>
 
+* Haz clic en el botón de *Play*:
 <div style="display: flex; justify-content: center;">
     <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/mostrando-logs.png" target="_blank">
         <img src="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/logs-img/mostrando-logs.png" alt="mostrando-logs" style="max-width: 100%; height: auto;">
