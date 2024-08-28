@@ -1,16 +1,19 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
-// https://astro.build/config
+const site = 'https://docs.syndeno.cloud/'; // URL final donde se desplegará
+
+// https://astro.build/config - 
 export default defineConfig({
+	site,
 	i18n: {  //idiomas
 		defaultLocale: "es",
 		locales: ["es"],
 	},
 	integrations: [
 		starlight({
-			favicon: '/favicon.ico', //LOGO PESTAÑA
 			title: 'Syndeno',
+			favicon: '/favicon.ico', //LOGO PESTAÑA
 			customCss: [
 				"./src/styles/custom.css",
 			],
