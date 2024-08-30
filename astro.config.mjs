@@ -1,26 +1,25 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
-const site = 'https://docs.syndeno.cloud/'; // URL final donde se desplegará
-
 // https://astro.build/config - 
 export default defineConfig({
-	site,
-	i18n: {  //idiomas
-		defaultLocale: "es",
-		locales: ["es"],
-	},
 	integrations: [
 		starlight({
-			title: 'Syndeno',
+			title: 'Docs',
 			favicon: '/favicon.ico', //LOGO PESTAÑA
+			//Configurar idioma español por defecto
+			defaultLocale: 'root',
+			locales: {
+				root: {
+					label: 'Spanish',
+					lang: 'es',
+				},
+			},
 			customCss: [
 				"./src/styles/custom.css",
 			],
 			social: {
-				github: "https://github.com/syndeno",
 				linkedin: "https://www.linkedin.com/company/syndeno",
-				"x.com": "https://twitter.com/syndeno",
 			},
 			logo: {
 				light: '/src/assets/logo-navbar-dark.png',
@@ -29,11 +28,7 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: "Documentación",
-					link: '/',
-				},
-				{
-					label: "Empezar",
+					label: "▶️ Empezar",
 					link: 'https://syndeno.cloud/sign-in',
 					attrs: {target: '_blank'},
 				},
@@ -179,6 +174,7 @@ export default defineConfig({
 						},
 					],
 				},
+				/*
 				{
 					label: "Preguntas frecuentes",
 					collapsed: true,
@@ -201,6 +197,7 @@ export default defineConfig({
 						},
 					],
 				},
+				*/
 			],
 		}),
 	],
