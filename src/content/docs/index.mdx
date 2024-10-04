@@ -1,10 +1,9 @@
 ---
-title: Welcome to Syndeno
-description: Get started building your docs site with Starlight.
+title: Bienvenido a Syndeno Docs
 tableOfContents: false
 next: false
 hero:
-  tagline: Guía para el uso eficiente de Syndeno Platform y la CLI. Siga los pasos a continuación para comenzar. 🚀
+  tagline: Guía para el uso eficiente de nuestra plataforma. Siga los pasos a continuación para comenzar. 🚀
   image:
     light: src/assets/logo-dark.png
     dark: src/assets/logo-light.png
@@ -46,3 +45,7 @@ import { LinkCard, CardGrid } from '@astrojs/starlight/components';
   href="how-to/pasos-para-levantar-app/conf-pipeline"
   />
 </CardGrid>
+
+<footer style="width: 100%; padding: 20px; background-color: #f8f8f8; text-align: center; font-size: 0.9em;">
+  <p>© 2024 Syndeno Docs - Versión {import.meta.env.PUBLIC_RELEASE_VERSION ?? "v0.0.1"}</p>
+</footer>

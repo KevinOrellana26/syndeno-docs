@@ -3,7 +3,7 @@ title: Nodes
 tableOfContents: false
 ---
 
-En esta sección, se muestra un listado de todos os nodos creados en el clúster.
+En esta sección, se muestra un listado de todos los nodos creados en el clúster.
 
 <div style="display: flex; justify-content: center;">
     <a href="/src/content/docs/img/getting-started/syndeno-ecosystem/kubernetes-img/nodes/list-nodes.png" target="_blank">

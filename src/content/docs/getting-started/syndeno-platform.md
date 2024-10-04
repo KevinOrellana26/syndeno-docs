@@ -3,11 +3,11 @@ title: Syndeno Platform
 tableOfContents: false
 ---
 
-Syndeno es una plataforma todo en uno donde podrás ver información sobre tu cluster de Kubernetes como así también configurar y desplegar tus aplicaciones y servicios.
+Syndeno es una plataforma todo en uno donde podrás ver información sobre tu cluster de Kubernetes como así también configurar y desplegar tus aplicaciones y servicios.  
 
-<a href="/src/content/docs/img/getting-started/syndeno-platform/platform.png" target="_blank">
+<p><a href="/src/content/docs/img/getting-started/syndeno-platform/platform.png" target="_blank">
     <img src="/src/content/docs/img/getting-started/syndeno-platform/platform.png" alt="platform">
-</a>
+</a></p>
 
 ## Principales features de Syndeno
 

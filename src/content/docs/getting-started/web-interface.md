@@ -11,19 +11,22 @@ Esta sección nos proporciona diferentes herramientas y vistas para gestionar y 
 </div>
 
 **1. Dashboard:**
-interfaz gráfica que te permite visualizar y gestionar los recursos del clúster.
+interfaz gráfica que te permite visualizar los recursos del clúster.
 
-**2. Namespaces:**
+**2. Nodes:**
+podemos obtener un listado de todos los nodos que forman parte del clúster.
+
+**3. Namespaces:**
 en el se encuentra todos los namespaces creados en el clúster.
 
-**3. Nodes:**
-podemos obtener un listado de todos los nodos que forman parte del clúster ejecutan contenedores.
+**4. Workloads:**
 
-**4. Logs:**
-información en tiempo real sobre la actividad y estado de los Pods del clúster. Esenciales para la depuración y monitoreo.
 
-**5. Shell:**
-acceso a una línea de comandos dentro de un Pod ya sea con uno o más contenedores.
+**5. Logs:**
+información en tiempo real sobre la actividad de la aplicación en el clúster. Esenciales para la depuración y monitoreo.
+
+**6. Shell:**
+acceso a una línea de comandos dentro de un Pod ya sea a uno o más contenedores.
 
 ---
 

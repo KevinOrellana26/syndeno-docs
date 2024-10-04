@@ -28,13 +28,13 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: "▶️ Empezar",
+					label: "Empezar 🚀",
 					link: 'https://syndeno.cloud/sign-in',
 					attrs: {target: '_blank'},
 				},
 				{
 					label: "Primeros Pasos",
-					collapsed: true,
+					collapsed: false,
 					items: [
 						{
 							label: "Introducción a Syndeno Platform",
@@ -47,7 +47,7 @@ export default defineConfig({
 						{ label: "Interfaz web de Syndeno", slug: "getting-started/web-interface" },
 						{
 							label: "Ecosistema Syndeno",
-							collapsed: true,
+							collapsed: false,
 							items: [
 								{
 									label: "Kubernetes",
@@ -58,12 +58,17 @@ export default defineConfig({
 											slug: "getting-started/syndeno-ecosystem/kubernetes-doc/dashboard",
 										},
 										{
+											label: "Nodes",
+											slug: "getting-started/syndeno-ecosystem/kubernetes-doc/nodes",
+										},
+										{
 											label: "Namespaces",
 											slug: "getting-started/syndeno-ecosystem/kubernetes-doc/namespaces",
 										},
 										{
-											label: "Nodes",
-											slug: "getting-started/syndeno-ecosystem/kubernetes-doc/nodes",
+											label: "Workloads",
+											badge: { text: 'Nuevo', variant: 'note'},
+											slug: "getting-started/syndeno-ecosystem/kubernetes-doc/workloads",
 										},
 										{
 											label: "Logs",
@@ -103,11 +108,12 @@ export default defineConfig({
 				},
 				{
 					label: "Cómo Hacer",
-					collapsed: true,
+					collapsed: false,
 					//autogenerate: { directory: 'reference' },
 					items: [
 						{
 							label: "Iniciar sesión",
+							badge: { text: 'Nuevo', variant: 'note'},
 							slug: "how-to/login-and-signup/login-and-signup",
 						},
 						{
@@ -174,18 +180,18 @@ export default defineConfig({
 						},
 					],
 				},
-				/*
 				{
 					label: "Preguntas frecuentes",
 					collapsed: true,
 					items: [
 						{
 							label:
-								"¿Cómo actualizar de versión de un lenguaje de programación?",
+								"Desplegar aplicación",
 							slug: "faq/actualizar-version-lenguaje-programacion",
 						},
 					],
 				},
+				/*
 				{
 					label: "Errores comunes",
 					collapsed: true,
