@@ -180,7 +180,7 @@ export default defineConfig({
 						},
 					],
 				},
-				{
+				/*{
 					label: "Preguntas frecuentes",
 					collapsed: true,
 					items: [
@@ -190,7 +190,7 @@ export default defineConfig({
 							slug: "faq/actualizar-version-lenguaje-programacion",
 						},
 					],
-				},
+				},*/
 				/*
 				{
 					label: "Errores comunes",
