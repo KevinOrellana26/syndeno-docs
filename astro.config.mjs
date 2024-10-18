@@ -180,17 +180,56 @@ export default defineConfig({
 						},
 					],
 				},
-				/*{
+				{
 					label: "Preguntas frecuentes",
 					collapsed: true,
 					items: [
 						{
 							label:
-								"Desplegar aplicación",
-							slug: "faq/actualizar-version-lenguaje-programacion",
+								"¿Cómo acceder a los logs?",
+							slug: "faq/acceso-logs",
+						},
+						{
+							label: 
+								"¿Cómo renovar los certificados?",
+							slug: "faq/renovar-certificados",
+						},
+						{
+							label: 
+								"¿Cómo configurar un dominio desde la plataforma?",
+							slug: "faq/configurar-dominio",
+						},
+						{
+							label: 
+								"¿Es posible añadir más de un hostname para una aplicación?",
+							slug: "faq/añadir-hostname",
+						},
+						{
+							label: 
+								"¿Se puede actualizar el Dockerfile desde la plataforma?",
+							slug: "faq/actualizar-dockerfile",
+						},
+						{
+							label: 
+								"¿Qué diferencias hay entre las bases de datos de dev y prod?",
+							slug: "faq/dif-dev-prod-bbdd",
+						},
+						{
+							label: 
+								"¿Puedo configurar comandos personalizados en el despliegue?",
+							slug: "faq/configurar-comandos",
+						},
+						{
+							label: 
+								"¿Puedo crear archivos desde la plataforma?",
+							slug: "faq/archivo-comando-despliegue",
 						},
 					],
-				},*/
+				},
+				// {
+				// 	label: "Preguntas Frecuentes old",
+				// 	slug: "faq/preguntas-frecuentes",
+				// }, 
 				/*
 				{
 					label: "Errores comunes",

@@ -20,7 +20,7 @@ podemos obtener un listado de todos los nodos que forman parte del clúster.
 en el se encuentra todos los namespaces creados en el clúster.
 
 **4. Workloads:**
-
+permite visualizar y gestionar las aplicaciones que están en ejecución en el clúster, incluyendo Pods, Deployment, y ReplicaSets.
 
 **5. Logs:**
 información en tiempo real sobre la actividad de la aplicación en el clúster. Esenciales para la depuración y monitoreo.

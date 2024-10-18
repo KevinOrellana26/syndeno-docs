@@ -4,13 +4,13 @@ tableOfContents: false
 ---
 
 Ubicados en la sección **Pipelines** buscamos el pipeline que hemos creado en el apartado [Creación de proyecto](https://docs.syndeno.cloud/how-to/pasos-para-levantar-app/crear-proyecto/), en este caso se llama ***nuevo-pipeline***:
-
+<br></br>
 <a href="/src/content/docs/img/how-to/pasos-para-levantar-app/conf-pipeline/repo-git-antes.png" target="_blank">
     <img src="/src/content/docs/img/how-to/pasos-para-levantar-app/conf-pipeline/repo-git-antes.png" alt="git antes">
 </a>
 
 Debemos agregar la URL del repositorio de Git donde tenemos la aplicación. Para esto **recordar generar un token con permisos** y ponerlo en la URL:
-
+<br></br>
 <a href="/src/content/docs/img/how-to/pasos-para-levantar-app/conf-pipeline/repo-git-despues.png" target="_blank">
     <img src="/src/content/docs/img/how-to/pasos-para-levantar-app/conf-pipeline/repo-git-despues.png" alt="git despues">
 </a>

@@ -3,7 +3,7 @@ title: Funcionamiento de Syndeno
 ---
 
 Syndeno dispone de una infraestructura sólida y adaptable, estructurada a través del siguiente stack:
-
+<br><br>
 <a href="/src/content/docs/img/getting-started/funcionamiento-syndeno/syndeno-paas.png" target="_blank">
     <img src="/src/content/docs/img/getting-started/funcionamiento-syndeno/syndeno-paas.png" alt="syndeno-paas">
 </a>
