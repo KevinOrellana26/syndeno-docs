@@ -225,24 +225,33 @@ export default defineConfig({
 							slug: "faq/archivo-comando-despliegue",
 						},
 					],
-				},
-				// {
-				// 	label: "Preguntas Frecuentes old",
-				// 	slug: "faq/preguntas-frecuentes",
-				// }, 
-				/*
+				},			
 				{
 					label: "Errores comunes",
 					collapsed: true,
 					items: [
 						{
 							label:
-								"Diferenciar entre Local Dev y Prod al momento de hacer un test sobre una BBDD",
-							slug: "common-errors/diferenciar-local-dev-prod-bbdd",
+								"Error al Desplegar Aplicaciones",
+							slug: "common-errors/error-desplegar-apps",
+						},
+						{
+							label:
+								"Error 502 en mi aplicación",
+							slug: "common-errors/error-502-app",
+						},
+						{
+							label:
+								"Error 503 en mi aplicación",
+							slug: "common-errors/error-503-app",
+						},
+						{
+							label:
+								"¿Qué hacer cuando falla un Pipeline?",
+							slug: "common-errors/error-falla-pipeline",
 						},
 					],
 				},
-				*/
 			],
 		}),
 	],
