@@ -68,7 +68,6 @@ export default defineConfig({
                     },
                     {
                       label: "Workloads",
-                      badge: { text: "Nuevo", variant: "note" },
                       slug: "getting-started/syndeno-ecosystem/kubernetes-doc/workloads",
                     },
                     {
@@ -114,7 +113,6 @@ export default defineConfig({
           items: [
             {
               label: "Iniciar sesión",
-              badge: { text: "Nuevo", variant: "note" },
               slug: "how-to/login-and-signup/login-and-signup",
             },
             {
@@ -219,6 +217,10 @@ export default defineConfig({
             {
               label: "¿Puedo crear archivos desde la plataforma?",
               slug: "faq/archivo-comando-despliegue",
+            },
+            {
+              label: "¿Cómo se gestiona el tráfico entre réplicas en Kubernetes?",
+              slug: "faq/gestionar-trafico-deployment",
             },
           ],
         },
