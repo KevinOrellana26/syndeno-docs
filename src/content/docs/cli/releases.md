@@ -1,0 +1,17 @@
+---
+title: Releases
+tableOfContents: false
+---
+
+## v7.3.0
+
+### MacOS
+- [Descargar para MacOS](../../../src/assets/releases/synctl-darwin-amd64)
+
+### Windows
+- [Descargar para Windows](../../../src/assets/releases/synctl-windows-amd64.exe)
+
+### Linux
+- **amd64**: [Descargar para amd64](../../../src/assets/releases/synctl-linux-amd64)
+- **arm32**: [Descargar para arm32](../../../src/assets/releases/synctl-linux-arm)
+- **arm64**: [Descargar para arm64](../../../src/assets/releases/synctl-linux-arm64)

@@ -114,7 +114,6 @@ export default defineConfig({
           items: [
             {
               label: "Iniciar sesión",
-              badge: { text: "Nuevo", variant: "note" },
               slug: "how-to/login-and-signup/login-and-signup",
             },
             {
@@ -246,8 +245,25 @@ export default defineConfig({
         },
         {
           label: "Contacta con Soporte",
-          badge: { text: "Nuevo", variant: "note" },
           slug: "soporte/contacta-con-soporte",
+        },
+        {
+          label: "CLI",
+          badge: { text: "Nuevo", variant: "note" },
+          items: [
+            {
+              label: "Instalación y configuración",
+              slug: "cli/installation-and-configuration",
+            },
+            {
+              label: "Comandos",
+              slug: "cli/commands",
+            },
+            {
+              label: "Releases",
+              slug: "cli/releases",
+            },
+          ],
         },
       ],
     }),
