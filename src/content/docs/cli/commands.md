@@ -1,6 +1,6 @@
 ---
 title: Comandos
-tableOfContents: false
+tableOfContents: true
 ---
 
 # General
@@ -31,10 +31,6 @@ tableOfContents: false
 - params
 - job
 - builds
-
-# Detalle
-
-Descripción detallada
 
 ## Argumentos globales
 

@@ -3,6 +3,9 @@ title: Instalación y configuración
 tableOfContents: false
 ---
 
+## Credenciales
+Recordar que se deben solicitar las credenciales de client-id y client-secret al equipo de Syndeno para poder utilizar la CLI.
+
 ## Instalación
 
 ### Instalación con el binario de una release
