@@ -10,7 +10,7 @@ Recordar que se deben solicitar las credenciales de client-id y client-secret al
 
 ### Instalación con el binario de una release
 
-Se debe descargar el binario desde la sección de [Releases](releases)
+Se debe descargar el binario desde la sección de [Releases](./releases)
 
 Se debe colocar en cualquier dirección del PATH y generar el autocompletado.
 
