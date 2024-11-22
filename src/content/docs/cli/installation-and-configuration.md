@@ -8,18 +8,19 @@ Recordar que se deben solicitar las credenciales de client-id y client-secret al
 
 ## Instalación
 
-### Instalación con el binario de una release
+### Descargar binario de releases
 
 Se debe descargar el binario desde la sección de [Releases](https://docs.syndeno.cloud/cli/releases/)
 
-Se debe colocar en cualquier dirección del PATH y generar el autocompletado.
+Se debe colocar en cualquier dirección del PATH. Generar el autocompletado es opcional.
 
 ### Carpetas donde se puede colocar el binario
 
 Dependiendo del sistema operativo se debe obtener el contenido de la variable de entorno PATH para ver que carpetas permiten colocar el binario de synctl.
 
-#### Linux
-/usr/local/bin/
+#### En Linux
+En distribuciones basadas en Linux se puede utilizar este directorio:
+**/usr/local/bin/**
 
 Si necesitamos otra carpeta lo podemos chequear con este comando:
 
@@ -28,15 +29,17 @@ $ echo $PATH
 /home/ferbar/.asdf/shims:/home/ferbar/.asdf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/go/bin:/home/ferbar/go/bin:/home/ferbar/Apps/bin
 ```
 
-#### Windows
+#### En Windows
+En Windows se puede utilizar este directorio:
 
-C:\Users\<User>\AppData\Local\Microsoft\WindowsApps\
+**C:\Users\<User>\AppData\Local\Microsoft\WindowsApps\**
 
-#### MacOS
+#### En MacOS
+En MacOS se puede utilizar este directorio:
 
-/usr/local/bin/
+**/usr/local/bin/**
 
-#### Tipica instalación con Linux
+### Tipica instalación con Linux
 
 Renombramos el binario:
 
@@ -79,6 +82,18 @@ $ synctl completion fish
 $ synctl completion powershell
 $ synctl completion zsh
 ```
+
+### Tipica instalación con MacOS
+
+Es similar a la instalación en Linux. Con un paso extra que es dar permisos a synctl. 
+
+Se debe dar permisos a synctl si no veremos esta alerta al ejecutar cualquier comando.
+
+![texto alternativo](/src/content/docs/img/cli/common-errors/synctl-error-macos-installation.png "título opcional")
+
+Siguiendo esta guía oficial de Apple se puede solucionar: https://support.apple.com/en-us/102445
+
+En el caso de querer instalar autocompletado seguramente se requiera hacerlo con zsh no con bash.
 
 ## Configuración
 
