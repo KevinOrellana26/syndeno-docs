@@ -8,8 +8,14 @@ COPY package*.json ./
 RUN npm install
 #Copiamos el resto de archivos del proyecto
 COPY . .
+
+ARG GITHUB_TOKEN_CLI=replace
+
+# ENV GITHUB_TOKEN_CLI=${GITHUB_TOKEN_CLI}
+# ENV GITHUB_TOKEN=${SYN_JOB_param_GITHUB_TOKEN_CLI}
+
 #Construimos la wiki
-RUN npm run build
+RUN node scripts/generate-releases.js && npm run build
 
 #Usamos una imagen ligera para servir la web estática
 FROM nginx:alpine
