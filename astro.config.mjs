@@ -219,7 +219,8 @@ export default defineConfig({
               slug: "faq/archivo-comando-despliegue",
             },
             {
-              label: "¿Cómo se gestiona el tráfico entre réplicas en Kubernetes?",
+              label:
+                "¿Cómo se gestiona el tráfico entre réplicas en Kubernetes?",
               slug: "faq/gestionar-trafico-deployment",
             },
           ],
@@ -265,6 +266,24 @@ export default defineConfig({
             {
               label: "Releases",
               slug: "cli/releases",
+            },
+          ],
+        },
+        {
+          label: "Release Notes",
+          badge: { text: "Nuevo", variant: "note" },
+          items: [
+            {
+              label: "v7.3.1",
+              slug: "release-notes/v7_3_1",
+            },
+            {
+              label: "v7.2.3",
+              slug: "release-notes/v7_2_3",
+            },
+            {
+              label: "v7.1.3.1",
+              slug: "release-notes/v7_1_3_1",
             },
           ],
         },
