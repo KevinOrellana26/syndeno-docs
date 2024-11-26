@@ -16,8 +16,8 @@ pipelineKubernetesJobAzure {
             """.stripIndent()
 
             def namespace = this.params.SYN_ENVIRONMENT_name
-            def imageName = this.params.SYN_ENVIRONMENT_name ? "${this.params.SYN_AZURE_container_registry}.azurecr.io/syndeno-docs-${this.params.SYN_ENVIRONMENT_name}"
-            def fqdn = "docs.syndeno.cloud"
+            def imageName = this.params.SYN_ENVIRONMENT_name ? "syndenoplatform.azurecr.io/syndeno-docs-${this.params.SYN_ENVIRONMENT_name}" : ''
+            def fqdn = this.params.SYN_ENVIRONMENT_domain
 
             images = [
                 [
@@ -43,7 +43,6 @@ pipelineKubernetesJobAzure {
                             imageName: imageName,
                             imageTag: "latest",
                             probePort: 80,
-                            env: [:],
                             resources: [
                                 requests: [
                                     enabled: true,
@@ -65,7 +64,7 @@ pipelineKubernetesJobAzure {
                 [
                     name: "syndeno-docs-ingress",
                     namespace: namespace,
-                    cert_issuer: 'syndeno-issuer',
+                    cert_issuer: 'syndeno-issuer-http',
                     ingressClass: 'nginx',
                     tls: fqdn,
                     rules: [
