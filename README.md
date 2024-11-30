@@ -9,16 +9,19 @@ Esta es una guía paso a paso de cómo se pueden añadir nuevas páginas, hacer 
 ---
 
 ## Índice
-- [Instalar node](#instalar-node)
+- [Instalar Node](#instalar-node)
 - [Instalar y Configurar Git](#instalar-y-configurar-git)
 - [Instalar Visual Studio Code](#instalar-visual-studio-code)
-- [Atajos de estilos MarkDown](#atajos-de-estilos-markdown)
+- [Atajos de estilos Markdown](#atajos-de-estilos-markdown)
 - [Puntos más importantes](#puntos-más-importantes)
-- [Añadir una nueva página](#añadir-una-nueva-pagina)
+- [Añadir una nueva página](#añadir-una-nueva-página)
 - [Añadir página en el fichero astro.config.mjs](#añadir-página-en-el-fichero-astroconfigmjs)
+- [Subir los cambios al repositorio](#subir-los-cambios-al-repositorio)
 - [Crear release](#crear-release)
+- [Desplegar nueva versión desde la plataforma](#desplegar-nueva-versión-desde-la-plataforma)
 - [Resumen](#resumen)
 - [Comandos](#comandos)
+
 
 ---
 ### Instalar node
